@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nermine El-Behery — Life &amp; Relationship Coaching | A Journey to a Balanced Life</title>
+<meta name="description" content="Nermine El-Behery, Life & Relationship Coach. A journey to a balanced life — through pause, reflection, understanding, choice, transformation, and balance.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Amiri:wght@400;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.143.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.143.0/examples/jsm/"
+  }
+}
+</script>
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<canvas id="tunnel-canvas"></canvas>
+<div class="vignette"></div>
+<div class="grain"></div>
+
+<nav class="nav">
+  <a href="#top" class="nav-logo"><img src="images/logo-nav.png" alt="Nermine El-Behery — Life Coaching"></a>
+  <button type="button" class="nav-burger" id="nav-burger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links">
+    <a href="#journey" data-en="The Journey" data-ar="الرحلة">The Journey</a>
+    <a href="#about" data-en="About" data-ar="من هي">About</a>
+    <a href="#coaching" data-en="Coaching" data-ar="التدريب">Coaching</a>
+    <button type="button" class="nav-cta" data-contact-trigger="booking" data-en="Book a Session" data-ar="احجز جلسة">Book a Session</button>
+    <span class="lang-switch">
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+      <span class="lang-sep">/</span>
+      <button type="button" class="lang-btn" data-lang="ar">AR</button>
+    </span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <a href="#journey" data-en="The Journey" data-ar="الرحلة">The Journey</a>
+  <a href="#about" data-en="About Nermine" data-ar="عن نرمين">About Nermine El-Behery</a>
+  <a href="#coaching" data-en="Services" data-ar="الخدمات">Services</a>
+  <a href="#book" data-en="Books" data-ar="الكتب">Books</a>
+  <a href="#media" data-en="Interviews &amp; Episodes" data-ar="لقاءات وحلقات">Interviews &amp; Episodes</a>
+  <a href="#contact" data-en="Contact Us" data-ar="تواصل معنا">Contact Us</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <img class="hero-logo" src="images/logo-full.png" alt="Nermine El-Behery — Life Coaching. A journey to a balanced life.">
+    <div class="hero-copy">
+      <p class="hero-line grad-text"
+         data-en="What if the ideal life you're looking for begins with understanding the life you're currently living"
+         data-ar="ماذا لو كانت الحياة المثالية التي تبحث عنها تبدأ من فهم الحياة التي تعيشها">What if the ideal life you're looking for begins with understanding the life you're currently living</p>
+    </div>
+    <div class="hero-cta">
+      <button type="button" class="btn btn--primary" data-contact-trigger="booking" data-en="Begin Your Journey" data-ar="ابدأ رحلتك">Begin Your Journey</button>
+      <a href="#coaching" class="btn btn--ghost" data-en="Explore Coaching" data-ar="استكشف التدريب">Explore Coaching</a>
+    </div>
+    <div class="scroll-cue" data-en="" data-ar="">Scroll</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div class="about-frame"><img class="about-frame-img" src="images/photo-nermine.webp" alt="Nermine El-Behery"></div>
+      <div>
+        <span class="about-eyebrow" data-en="Life &amp; Relationship Coach" data-ar="مدربة حياة وعلاقات">Life &amp; Relationship Coach</span>
+        <h2 class="grad-text" data-en="I'm Nermine El-Behery" data-ar="أنا نرمين البحيري">I'm Nermine El-Behery</h2>
+        <p data-en="Behind my career lies a long journey of searching, changing, and understanding myself. I started out as a successful chemical engineer, then moved into education, where I developed new skills through studying the British curriculum and earning a HighScope certification. Even so, there was always an inner voice whispering that I hadn't yet reached where I truly belonged. The real turning point came when I became a Mars Venus Life Coach. That's when I started seeing life differently, and realized that changing the way we think can change the way we see the world, the decisions we make, and the relationships we build. Today, I use my coaching experience to help others pause, understand themselves more deeply, see their choices clearly, and move toward a more balanced and fulfilling life." data-ar="خلف مسيرتي المهنية رحلة طويلة من البحث، والتغيير، وفهم الذات. بدأت رحلتي كمهندسة كيميائية ناجحة، ثم انتقلت إلى مجال التعليم، حيث طورت مهارات جديدة من خلال دراسة المنهج البريطاني والحصول على شهادة كعضو في HighScope. ومع ذلك، ظل هناك صوت داخلي يهمس لي بأنني لم أصل بعد إلى المكان الذي أنتمي إليه. كان التحول الحقيقي عندما أصبحت Mars Venus Life Coach. عندها بدأت أرى الحياة بطريقة مختلفة، وأدركت أن تغيير طريقة تفكيرنا يمكن أن يغيّر الطريقة التي نرى بها العالم، والقرارات التي نتخذها، والعلاقات التي نبنيها. اليوم، أستخدم خبرتي في الـCoaching لمساعدة الآخرين على التوقف، وفهم أنفسهم بشكل أعمق، ورؤية خياراتهم بوضوح، والتحرك نحو حياة أكثر توازنًا ورضا.">Behind my career lies a long journey of searching, changing, and understanding myself. I started out as a successful chemical engineer, then moved into education, where I developed new skills through studying the British curriculum and earning a HighScope certification. Even so, there was always an inner voice whispering that I hadn't yet reached where I truly belonged. The real turning point came when I became a Mars Venus Life Coach. That's when I started seeing life differently, and realized that changing the way we think can change the way we see the world, the decisions we make, and the relationships we build. Today, I use my coaching experience to help others pause, understand themselves more deeply, see their choices clearly, and move toward a more balanced and fulfilling life.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY INTRO -->
+  <section id="journey">
+    <div class="wrap journey-intro">
+      <span class="eyebrow" data-en="The Journey" data-ar="">The Journey</span>
+      <h2 class="grad-text"
+          data-en-html="Maybe you don't need more answers.<br>You need clear explanations."
+          data-ar-html="ربما لا تحتاج إلى إجابات أخرى.<br>بل تحتاج إلى تفسيرات واضحة.">Maybe you don't need more answers.<br>You need clear explanations.</h2>
+    </div>
+
+    <div class="wrap" id="journey-stages">
+      <div class="stage" data-stage="0">
+        <div class="stage-inner">
+          <div class="stage-index">01</div>
+          <p class="stage-sub" data-en="Before you change your life, you have to be willing to see it clearly." data-ar="قبل أن تغيّر حياتك، عليك أن تكون مستعدًا لرؤيتها بوضوح.">Before you change your life, you have to be willing to see it clearly.</p>
+        </div>
+      </div>
+
+      <div class="stage" data-stage="1">
+        <div class="stage-inner">
+          <div class="stage-index">02</div>
+          <p class="stage-sub" data-en="The beliefs, values and needs behind your choices shape the life you experience." data-ar="المعتقدات والقيم والاحتياجات خلف خياراتك هي التي تصنع الحياة التي تعيشها.">The beliefs, values and needs behind your choices shape the life you experience.</p>
+        </div>
+      </div>
+
+      <div class="stage" data-stage="2">
+        <div class="stage-inner">
+          <div class="stage-index">03</div>
+          <p class="stage-sub" data-en="Not what's expected of you — what you actually want, for your life, your relationships, your work." data-ar="ليس ما يُتوقع منك، بل ما تريده أنت فعلاً — لحياتك، لعلاقاتك، ولعملك.">Not what's expected of you — what you actually want, for your life, your relationships, your work.</p>
+        </div>
+      </div>
+
+      <div class="stage" data-stage="3">
+        <div class="stage-inner">
+          <div class="stage-index">04</div>
+          <p class="stage-sub" data-en="The same mindset, applied again, tends to create the same results." data-ar="نفس طريقة التفكير، إذا تكررت، غالبًا ما تصنع نفس النتيجة.">The same mindset, applied again, tends to create the same results.</p>
+        </div>
+      </div>
+
+      <div class="stage" data-stage="4">
+        <div class="stage-inner">
+          <div class="stage-index">05</div>
+          <div class="stage-name" data-en="DREAM · PLAN · DO" data-ar="احلم · خطّط · نفّذ">DREAM · PLAN · DO</div>
+          <p class="stage-sub" data-en="Dream what you want. Plan it into a clear goal, and follow through, holding yourself accountable." data-ar="احلم بما تريده. خطط إلى هدف واضح، ونفّذ خطواته، وحاسب نفسك عليها.">Dream what you want. Plan it into a clear goal, and follow through, holding yourself accountable.</p>
+        </div>
+      </div>
+
+      <div class="stage" data-stage="5">
+        <div class="stage-inner">
+          <div class="stage-index">06</div>
+          <p class="stage-sub" data-en="Balance isn't about having everything under control — it's about knowing yourself, choosing consciously, and moving toward what matters." data-ar="التوازن ليس أن يكون كل شيء تحت السيطرة، بل أن تعرف نفسك، وتختار بوعي، وتتحرك نحو ما يهمك.">Balance isn't about having everything under control — it's about knowing yourself, choosing consciously, and moving toward what matters.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- COACHING -->
+  <section class="coaching" id="coaching">
+    <div class="wrap">
+      <div class="coaching-head">
+        <span class="about-eyebrow" data-en="Where do you want to start?" data-ar="من أين تريد أن تبدأ؟">Where do you want to start?</span>
+        <h2 class="grad-text" data-en="Different questions need different spaces." data-ar="لكل سؤال مساحته الخاصة.">Different questions need different spaces.</h2>
+      </div>
+      <div class="coaching-list">
+        <div class="coaching-row">
+          <div class="coaching-name" data-en="1:1 Coaching" data-ar="تدريب فردي">1:1 Coaching</div>
+          <div class="coaching-desc" data-en="For personal clarity, growth, decisions and life direction." data-ar="للوضوح الشخصي، والنمو، واتخاذ القرار، وتحديد اتجاه حياتك.">For personal clarity, growth, decisions and life direction.</div>
+          <a href="#final" class="coaching-link" data-en="Learn more →" data-ar="اعرف أكثر ←">Learn more →</a>
+        </div>
+        <div class="coaching-row">
+          <div class="coaching-name" data-en="Relationship Coaching" data-ar="تدريب العلاقات">Relationship Coaching</div>
+          <div class="coaching-desc" data-en="For understanding patterns, communication and relationships." data-ar="لفهم الأنماط، والتواصل، والعلاقات.">For understanding patterns, communication and relationships.</div>
+          <a href="#final" class="coaching-link" data-en="Learn more →" data-ar="اعرف أكثر ←">Learn more →</a>
+        </div>
+        <div class="coaching-row">
+          <div class="coaching-name" data-en="Workshops" data-ar="ورش عمل">Workshops</div>
+          <div class="coaching-desc" data-en="Focused experiences around specific life and relationship themes." data-ar="جلسات مركّزة حول موضوعات محددة في الحياة والعلاقات.">Focused experiences around specific life and relationship themes.</div>
+          <a href="#final" class="coaching-link" data-en="Learn more →" data-ar="اعرف أكثر ←">Learn more →</a>
+        </div>
+        <div class="coaching-row">
+          <div class="coaching-name" data-en="Courses &amp; Programs" data-ar="دورات وبرامج">Courses &amp; Programs</div>
+          <div class="coaching-desc" data-en="Deeper structured journeys for personal development." data-ar="رحلات أعمق ومنظمة للتنمية الشخصية.">Deeper structured journeys for personal development.</div>
+          <a href="#final" class="coaching-link" data-en="Learn more →" data-ar="اعرف أكثر ←">Learn more →</a>
+        </div>
+        <div class="coaching-row">
+          <div class="coaching-name" data-en="Me &amp; My Dear Self" data-ar="أنا وذاتي العزيزة">Me &amp; My Dear Self</div>
+          <div class="coaching-desc" data-en="A journey back to the relationship that influences every other relationship — the one you have with yourself. 28 hours." data-ar="رحلة عودة إلى العلاقة التي تؤثر في كل علاقة أخرى — علاقتك بنفسك. 28 ساعة.">A journey back to the relationship that influences every other relationship — the one you have with yourself. 28 hours.</div>
+          <a href="#final" class="coaching-link" data-en="Learn more →" data-ar="اعرف أكثر ←">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMING SOON / NEW COURSE -->
+  <section id="new-course">
+    <div class="wrap book-grid">
+      <div class="book-cover">
+        <img class="book-cover-img" data-src-en="images/course-cover-en.webp" data-src-ar="images/course-cover-ar.webp" src="images/course-cover-en.webp" alt="Turning Point — New Course by Nermine El-Behery">
+      </div>
+      <div class="book-info">
+        <span class="coming-soon-badge" data-en="Coming Soon" data-ar="قريبًا">Coming Soon</span>
+        <h2 class="grad-text" data-en="Turning Point" data-ar="نقطة تحول">Turning Point</h2>
+        <p data-en="A 5-week journey to explore awareness, emotional well-being, and personal growth through the perspective of the Qur'an and Sunnah." data-ar="رحلة من 5 أسابيع لاكتشاف الوعي، التربية، وإدارة المشاعر من منظور القرآن والسنة، وبناء علاقة أعمق مع الله ومع الذات.">A 5-week journey to explore awareness, emotional well-being, and personal growth through the perspective of the Qur'an and Sunnah.</p>
+        <ul class="turning-points">
+          <li data-en="A turning point in your awareness." data-ar="نقطة تحول في وعيك.">A turning point in your awareness.</li>
+          <li data-en="A turning point in your relationship with Allah." data-ar="نقطة تحول في علاقتك بالله.">A turning point in your relationship with Allah.</li>
+          <li data-en="A turning point in the way you see life." data-ar="نقطة تحول في نظرتك للحياة.">A turning point in the way you see life.</li>
+        </ul>
+        <p class="coming-soon-note" data-en="" data-ar="قريبًا."></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section id="book">
+    <div class="wrap book-grid">
+      <div class="book-cover">
+        <img class="book-cover-img" data-src-en="images/book-cover-en.webp" data-src-ar="images/book-cover-ar.webp" src="images/book-cover-en.webp" alt="Keys to Peace of Mind — Nermine El-Behery">
+      </div>
+      <div class="book-info">
+        <span class="about-eyebrow" data-en="The book of" data-ar="كتاب">Author</span>
+        <h2 class="grad-text" data-en="Keys to Peace of Mind" data-ar="مفاتيح الطمأنينة">Keys to Peace of Mind</h2>
+        <p data-en="7 keys to reassure your heart — a book written by Nermine El-Behery." data-ar="7 مفاتيح ليطمئن قلبك — كتاب من تأليف نرمين البحيري.">7 keys to reassure your heart — a book written by Nermine El-Behery.</p>
+        <h3 class="book-subhead" data-en="About the Book" data-ar="نبذة عن الكتاب">About the Book</h3>
+        <p data-en="Keys to Peace of Mind is a journey to discover seven keys that help you reach a greater sense of calm and reassurance. In this book, everyday life experiences meet reflection on the verses of God, blending knowledge and faith to open a space for a deeper understanding of what's happening within you and around you. Through seven keys, you'll uncover practical insights that help you build a more balanced, mentally healthier life, and learn how to find steadiness amid crises, and how to handle anxiety and challenges without losing your inner peace. Begin your journey from within, and discover the keys to peace of mind that may change the way you see life." data-ar="مفتاح الطمأنينة رحلة لاكتشاف سبعة مفاتيح تساعدك على الوصول إلى قدر أكبر من السكينة والطمأنينة. في هذا الكتاب، تلتقي تجارب الحياة اليومية بالتأمل في آيات الله، في مزيج يجمع بين العلم والدين، ويفتح لك مساحة لفهم أعمق لما يحدث بداخلك وحولك. من خلال سبعة مفاتيح، ستكتشف رؤى عملية تساعدك على بناء حياة أكثر اتزانًا وصحةً نفسية، وتتعلم كيف تبحث عن الثبات وسط الأزمات، وكيف تتعامل مع القلق والتحديات دون أن تفقد سلامك الداخلي. ابدأ رحلتك من الداخل، واكتشف مفاتيح الطمأنينة التي قد تغيّر نظرتك إلى الحياة.">Keys to Peace of Mind is a journey to discover seven keys that help you reach a greater sense of calm and reassurance. In this book, everyday life experiences meet reflection on the verses of God, blending knowledge and faith to open a space for a deeper understanding of what's happening within you and around you. Through seven keys, you'll uncover practical insights that help you build a more balanced, mentally healthier life, and learn how to find steadiness amid crises, and how to handle anxiety and challenges without losing your inner peace. Begin your journey from within, and discover the keys to peace of mind that may change the way you see life.</p>
+        <button type="button" class="btn btn--primary" id="order-book-btn" data-contact-trigger="book_order" data-en="Order the Book Now" data-ar="اطلب الكتاب الآن">Order the Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF -->
+  <section class="proof" id="proof">
+    <div class="wrap" style="text-align:center;">
+      <p class="proof-kicker" data-en="Client stories" data-ar="قصص العملاء">Client stories</p>
+    </div>
+    <div class="testimonials-scroll wrap">
+        <div class="testimonial">
+          <div class="testimonial-num">01</div>
+          <p data-en="Because I've genuinely changed so much, and I feel so much more at ease than before. My life has truly changed, and thank God, I've come to love myself — my strengths and my flaws. I've also become much calmer in how I react." data-ar="لأن فعلًا أنا اتغيرت كتير، وارتحت كتير جدًا عن الأول، وحياتي حقيقي اتغيرت، وبقيت بحب نفسي الحمد لله بمميزاتي وعيوبِي، وبقيت أهدى كتير كمان في ردود أفعالي.">Because I've genuinely changed so much, and I feel so much more at ease than before. My life has truly changed, and thank God, I've come to love myself — my strengths and my flaws. I've also become much calmer in how I react.</p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-num">02</div>
+          <p data-en="Thanks ya Nermine a lot for all of what u do. I know u say it's ur job, but u really make a difference. Many times I come feeling bad and by the end of the session I feel good about myself and learn from u." data-ar="شكرًا يا نرمين جدًا على كل اللي بتعمليه. أعرف إنك بتقولي إنها شغلانتك، بس إنتِ فعلاً بتعملي فرق حقيقي. أوقات كتير بجي وأنا حاسة إني تعبانة، وفي آخر الجلسة بحس إني كويسة مع نفسي وبتعلم منك.">Thanks ya Nermine a lot for all of what u do. I know u say it's ur job, but u really make a difference. Many times I come feeling bad and by the end of the session I feel good about myself and learn from u.</p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-num">03</div>
+          <p data-en="You have opened my eyes to things about myself and given me hope to develop myself &amp; my life positively! I could not do this alone, you have shown me the way and I am very grateful." data-ar="فتحتِ عنيّا على حاجات كتير في نفسي، وديتيني أمل إني أطوّر نفسي وحياتي بشكل إيجابي! ما كنتش أقدر أعمل ده لوحدي، إنتِ اللي وريتيني الطريق، وأنا ممتنّة جدًا.">You have opened my eyes to things about myself and given me hope to develop myself &amp; my life positively! I could not do this alone, you have shown me the way and I am very grateful.</p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-num">04</div>
+          <p data-en="I had been struggling with a really big issue for 32 years. In one of your videos, you talked about a specific approach to a specific topic. I applied it word for word, and my problem was resolved with complete ease." data-ar="أنا كنت بعاني من مشكلة كبيرة قوي مدة 32 سنة، وفي فيديو ليكي اتكلمتي فيه على طريقة معينة في موضوع معين. أنا طبقتها حرفيًا ومشكلتي النفسية اتحلت بسهولة تامة.">I had been struggling with a really big issue for 32 years. In one of your videos, you talked about a specific approach to a specific topic. I applied it word for word, and my problem was resolved with complete ease.</p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-num">05</div>
+          <p data-en="You're truly beautiful, and every time I go through a problem or fall down, your words give me the motivation to get back up again. May God place everything you do in your record of good deeds. 🤍" data-ar="إنتِ جميلة أوي، وكل فترة لما بيحصلي مشكلة أو أقع، بمعنى أصح، كلامك بيديني دافع إني أقوم تاني. وربنا يجعل كل اللي بتعمليه ده في ميزان حسناتك. 🤍">You're truly beautiful, and every time I go through a problem or fall down, your words give me the motivation to get back up again. May God place everything you do in your record of good deeds. 🤍</p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-num">06</div>
+          <p data-en="Thank you for helping me understand that respecting one's husband matters, and that with the changing generations, being combative isn't the answer. Thank you for taking on a path that isn't easy — it's the right one — and God willing, you'll be a light within it." data-ar="شكرًا لأنك بتفهميني إن احترام الزوج مهم، وإنه مع تغيير الأجيال الندية مش الحل. شكرًا إنك واخدة طريق مش سهل، هو الأصل، وبإذن الله تكوني مصباح فيه.">Thank you for helping me understand that respecting one's husband matters, and that with the changing generations, being combative isn't the answer. Thank you for taking on a path that isn't easy — it's the right one — and God willing, you'll be a light within it.</p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-num">07</div>
+          <p data-en="I think you are the greatest woman alive! 😍❤️ You compassionately &amp; skillfully uncovered my blocks to move forward &amp; helped me to discover which values &amp; beliefs were truly important to me. You have opened my eyes to things about myself and given me hope to develop myself &amp; my life positively!" data-ar="أعتقد إنك أعظم امرأة على الإطلاق! 😍❤️ بكل رحمة ومهارة كشفتِ العوائق اللي كانت بتمنعني من التقدم، وساعدتيني أكتشف القيم والمعتقدات اللي فعلاً مهمة بالنسبة لي. فتحتِ عنيّا على حاجات كتير في نفسي، وديتيني أمل إني أطوّر نفسي وحياتي بشكل إيجابي!">I think you are the greatest woman alive! 😍❤️ You compassionately &amp; skillfully uncovered my blocks to move forward &amp; helped me to discover which values &amp; beliefs were truly important to me. You have opened my eyes to things about myself and given me hope to develop myself &amp; my life positively!</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="final" id="final">
+    <p class="final-line grad-text"
+       data-en-html="You already know something needs to change.<br>The next step is understanding what."
+       data-ar-html="أنت تعرف بالفعل أن هناك شيئًا يحتاج إلى تغيير.<br>الخطوة التالية هي أن تفهم ماذا بالتحديد.">You already know something needs to change.<br>The next step is understanding what.</p>
+    <div class="final-ctas">
+      <button type="button" class="btn btn--primary" data-contact-trigger="booking" data-en="Start a Conversation" data-ar="ابدأ محادثة">Start a Conversation</button>
+      <button type="button" class="btn btn--ghost" data-contact-trigger="booking" data-en="Book a Coaching Session" data-ar="احجز جلسة تدريب">Book a Coaching Session</button>
+    </div>
+  </section>
+
+  <!-- AS SEEN ON -->
+  
+
+  <!-- MEDIA / INTERVIEWS -->
+  <section id="media">
+    <div class="wrap" style="text-align:center;">
+      <span class="about-eyebrow" data-en="Interviews &amp; Episodes" data-ar="لقاءات وحلقات">Interviews &amp; Episodes</span>
+    </div>
+    <div class="media-scroll wrap">
+        <a class="media-card" href="https://www.youtube.com/playlist?list=PLRMRm-g1uOkAJthbpfE7nofbRtAmGrkP-&si=lE-InfOOoNQdlmqy" target="_blank" rel="noopener">
+          <div class="media-thumb"><img src="images/media-2025.png" alt="In Their Stories, A Lesson – 2025" loading="lazy"></div>
+          <div class="media-title" data-en="In Their Stories, A Lesson – 2025" data-ar="في قصصهم عبرة - 2025">In Their Stories, A Lesson – 2025</div>
+          <div class="media-count" data-en="7 videos" data-ar="7 فيديوهات">7 videos</div>
+        </a>
+        <a class="media-card" href="https://www.youtube.com/playlist?list=PLRMRm-g1uOkBgMdFXH1ckJz_cgZ720pPD&si=8YGQ5H5zNH6qc1Fj" target="_blank" rel="noopener">
+          <div class="media-thumb"><img src="images/media-2024.png" alt="In Their Stories, A Lesson – 2024" loading="lazy"></div>
+          <div class="media-title" data-en="In Their Stories, A Lesson – 2024" data-ar="في قصصهم عبرة - ٢٠٢٤">In Their Stories, A Lesson – 2024</div>
+          <div class="media-count" data-en="9 videos" data-ar="9 فيديوهات">9 videos</div>
+        </a>
+        <a class="media-card" href="https://www.youtube.com/playlist?list=PLRMRm-g1uOkA1Y6eUcsdin9UJOHoUCsPk&si=49ID8dZTxQZ-qIxV" target="_blank" rel="noopener">
+          <div class="media-thumb"><img src="images/media-rehla2.png" alt="On The Journey — Part 2" loading="lazy"></div>
+          <div class="media-title" data-en="On The Journey — Part 2" data-ar="في الرحلة الجزء ٢">On The Journey — Part 2</div>
+          <div class="media-count" data-en="9 videos" data-ar="9 فيديوهات">9 videos</div>
+        </a>
+        <a class="media-card" href="https://www.youtube.com/playlist?list=PLRMRm-g1uOkBH7o3nDtA4M7Qz1Phn8xDg&si=r1gs-O_W4Q1mC9aD" target="_blank" rel="noopener">
+          <div class="media-thumb"><img src="images/media-rehla1.png" alt="On The Journey — Part 1" loading="lazy"></div>
+          <div class="media-title" data-en="On The Journey — Part 1" data-ar="في الرحلة" الجزء ١">On The Journey — Part 1</div>
+          <div class="media-count" data-en="10 videos" data-ar="10 فيديوهات">10 videos</div>
+        </a>
+        <a class="media-card" href="https://www.youtube.com/playlist?list=PLRMRm-g1uOkAN2tXKs8rogTvVRr5QIxly&si=zdohghE5W2yhY0r4" target="_blank" rel="noopener">
+          <div class="media-thumb"><img src="images/media-kalam-kabeer.png" alt="Big Talk – 2021" loading="lazy"></div>
+          <div class="media-title" data-en="Big Talk – 2021" data-ar="كلام كبير - ٢٠٢١">Big Talk – 2021</div>
+          <div class="media-count" data-en="10 videos" data-ar="10 فيديوهات">10 videos</div>
+        </a>
+        <a class="media-card" href="https://www.youtube.com/playlist?list=PLRMRm-g1uOkDXe_jgIYfIhcWp2YvjEV_S&si=xyoFunWgPRGXG7hd" target="_blank" rel="noopener">
+          <div class="media-thumb"><img src="images/media-beyon-helwa.png" alt="With Sweet Eyes – 2021" loading="lazy"></div>
+          <div class="media-title" data-en="With Sweet Eyes – 2021" data-ar="بعيون حلوة - ٢٠٢١">With Sweet Eyes – 2021</div>
+          <div class="media-count" data-en="9 videos" data-ar="9 فيديوهات">9 videos</div>
+        </a>
+    </div>
+  </section>
+
+<section id="as-seen-on" aria-label="As seen on">
+    <div class="seen-on-strip">
+      <img src="images/logo-dmc.png" alt="DMC">
+      <img src="images/logo-cbc.png" alt="CBC Sofra">
+      <img src="images/logo-sada-elbalad.png" alt="Sada El Balad">
+      <img src="images/logo-hya-tv.png" alt="Hya TV">
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="wrap footer-grid">
+      <div class="footer-logo"><img src="images/logo-full.png" alt="Nermine El-Behery — Life Coaching"></div>
+      <div class="footer-links">
+        <strong data-en="Nermine El-Behery" data-ar="نرمين البحيري">Nermine El-Behery</strong>
+        <span data-en="Life &amp; Relationship Coach" data-ar="مدربة حياة وعلاقات">Life &amp; Relationship Coach</span>
+        <span data-en="A Journey to a Balanced Life." data-ar="رحلة نحو حياة متوازنة.">A Journey to a Balanced Life.</span>
+      </div>
+      <div class="footer-links">
+        <a href="#journey" data-en="The Journey" data-ar="الرحلة">The Journey</a>
+        <a href="#about" data-en="About" data-ar="من هي">About</a>
+        <a href="#coaching" data-en="Coaching" data-ar="التدريب">Coaching</a>
+      </div>
+      <div class="footer-links">
+        <a href="tel:+201033708703">+20 103 370 8703</a>
+        <span data-en="Cairo, Egypt" data-ar="القاهرة، مصر">Cairo, Egypt</span>
+        <a href="mailto:[email protected]">[email protected]</a>
+        <div class="footer-social" aria-label="Social media">
+          <a href="https://www.threads.com/@nermine_elbehery?xmt=AQG0KZzAFSJGYO46k9QecPBvnHmzAhghSrKuoVFtyf9ruo0" target="_blank" rel="noopener" aria-label="Threads" title="Threads">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12.5 2c-4.8 0-8 3-8 9.5s3.2 10.5 8 10.5c3.7 0 6.2-1.7 6.9-4.8.6-2.7-.5-4.7-3.1-5.6-2-.7-4.3-.7-5.6.3-1 .8-1.2 2-.5 2.9.8 1 2.4 1.1 3.6.3" /><path d="M9.3 8.4c1.1-.9 3-1 4.6-.2 1.7.8 2.7 2.5 2.6 4.6"/></svg>
+          </a><a href="https://www.facebook.com/Nermineelbehery" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.58v1.87h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/nermine_elbehery/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@user3582500490469" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82c-.9-.88-1.4-2.07-1.4-3.32h-3.14v13.4c0 1.62-1.32 2.94-2.94 2.94a2.94 2.94 0 0 1-2.94-2.94 2.94 2.94 0 0 1 2.94-2.94c.29 0 .57.04.83.12V9.9a6.1 6.1 0 0 0-.83-.06A6.09 6.09 0 0 0 3.03 16a6.09 6.09 0 0 0 6.09 6.09A6.09 6.09 0 0 0 15.21 16V8.7a7.5 7.5 0 0 0 4.36 1.4V7c-1.24 0-2.4-.44-3.27-1.18-.24-.2-.47-.42-.7-.63z" transform="scale(0.85) translate(2,1)"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@NermineElbehery" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M22.5 12s0-3.2-.41-4.72a2.79 2.79 0 0 0-1.96-1.98C18.63 5 12 5 12 5s-6.63 0-8.13.3a2.79 2.79 0 0 0-1.96 1.98C1.5 8.8 1.5 12 1.5 12s0 3.2.41 4.72a2.79 2.79 0 0 0 1.96 1.98C5.37 19 12 19 12 19s6.63 0 8.13-.3a2.79 2.79 0 0 0 1.96-1.98C22.5 15.2 22.5 12 22.5 12z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M9.9 15.1V8.9l5.4 3.1z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="wrap footer-note"
+       data-en="© 2026 Nermine El-Behery. All rights reserved. All website copy and content are currently under review and have not yet received final approval from Nermine El-Behery."
+       data-ar="© 2026 نرمين البحيري. جميع الحقوق محفوظة. جميع محتويات الموقع قيد المراجعة حاليًا ولم تحصل بعد على الموافقة النهائية من نرمين البحيري.">© 2026 Nermine El-Behery. All rights reserved. All website copy and content are currently under review and have not yet received final approval from Nermine El-Behery.</p>
+  </footer>
+
+
+<div class="modal-overlay" id="order-modal" aria-hidden="true">
+  <div class="modal-box">
+    <button type="button" class="modal-close" id="order-modal-close" aria-label="Close">&times;</button>
+    <h3 id="order-modal-title">Order the Book</h3>
+    <p id="order-modal-desc">Leave your name and phone number, and we'll message you on WhatsApp to confirm your order.</p>
+    <input type="text" id="order-name" data-en-placeholder="Full name" data-ar-placeholder="الاسم بالكامل" placeholder="Full name">
+    <input type="tel" id="order-phone" data-en-placeholder="Phone number" data-ar-placeholder="رقم الهاتف" placeholder="Phone number">
+    <button type="button" class="btn btn--primary" id="order-submit" data-en="Send via WhatsApp" data-ar="إرسال عبر واتساب">Send via WhatsApp</button>
+  </div>
+</div>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script type="module" src="js/particles.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
